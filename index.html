@@ -1849,8 +1849,17 @@
       .balloon-one { left: -38px; }
       .balloon-two { right: -32px; }
       .birthday-ribbon { width: 74px; height: 74px; right: -16px; }
-      .wishes { display: grid; gap: 10px; }
-      .wish, .wish:first-child, .wish:last-child { border-radius: 16px; }
+      .wishes {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 12px;
+      }
+      .wish, .wish:first-child, .wish:last-child {
+        width: 100%;
+        border-radius: 16px;
+        transform: none;
+      }
       .story-tile, .story-tile:nth-child(n) { border-width: 6px; border-bottom-width: 28px; }
       .chapter-lines { grid-template-columns: 1fr; gap: 10px; }
       .chapter-line, .chapter-line:nth-child(2n) { min-height: 0; border-radius: 18px; }
